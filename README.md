@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# VayuX – Delhi-NCR
 
-# Run and deploy your AI Studio app
+### Hyperlocal Air Quality & 72-Hour Pollution Forecasting
 
-This contains everything you need to run your app locally.
+VayuX is a web application designed to make air-quality information easier to understand and more useful for short-term planning.
 
-View your app in AI Studio: https://ai.studio/apps/f71e0668-4c49-4c4d-86ae-e5287fa7cd38
+It brings air quality, weather, pollution trends, maps, hotspots, and 72-hour pollution forecasting together in one place, with a focus on the Delhi-NCR region.
 
-## Run Locally
+##  Live App
 
-**Prerequisites:**  Node.js
+**VayuX – Delhi-NCR:**  
+https://vayux-delhi-ncr-beta.vercel.app/
 
+##  What VayuX Includes
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Current air-quality information
+- PM2.5 and PM10 monitoring
+- 72-hour pollution forecasting
+- Pollution and hotspot maps
+- Weather information
+- Regional fire and stubble-burning information
+- Pollution risk levels and alerts
+- Location-based air-quality information
+- Responsive interface for desktop and mobile
+
+##  Technology Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- HTML & CSS
+
+##  Project Structure
+
+```text
+VayuX-Delhi-NCR/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── screens/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── types.ts
+├── package.json
+├── vite.config.ts
+└── README.md
