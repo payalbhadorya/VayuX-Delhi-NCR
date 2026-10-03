@@ -1,0 +1,7 @@
+{
+  "name": "VayuX - Hyperlocal Air Intelligence",
+  "description": "Hyperlocal air quality analytics, atmospheric radar simulation, real-time AQI tracking, and microclimate health guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

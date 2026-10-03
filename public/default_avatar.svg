@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="500" height="500" fill="#ffffff"/>
+  <!-- Head circle -->
+  <circle cx="250" cy="202" r="98" fill="#7d8794"/>
+  <!-- Torso curve -->
+  <path d="M 47 500 C 47 380, 138 322, 250 322 C 362 322, 453 380, 453 500 Z" fill="#7d8794"/>
+</svg>

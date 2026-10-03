@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0d1322;
+  --color-surface-dim: #0d1322;
+  --color-surface-bright: #33394a;
+  --color-surface-container-lowest: #080e1d;
+  --color-surface-container-low: #151b2b;
+  --color-surface-container: #191f2f;
+  --color-surface-container-high: #242a3a;
+  --color-surface-container-highest: #2f3445;
+  --color-on-surface: #dde2f8;
+  --color-on-surface-variant: #bec8d2;
+  --color-inverse-surface: #dde2f8;
+  --color-inverse-on-surface: #2a3040;
+  --color-outline: #88929b;
+  --color-outline-variant: #3e4850;
+  --color-surface-tint: #89ceff;
+
+  --color-primary: #89ceff;
+  --color-on-primary: #00344d;
+  --color-primary-container: #0ea5e9;
+  --color-on-primary-container: #003751;
+  --color-primary-fixed: #c9e6ff;
+  --color-primary-fixed-dim: #89ceff;
+  --color-on-primary-fixed: #001e2f;
+  --color-on-primary-fixed-variant: #004c6e;
+
+  --color-secondary: #4edea3;
+  --color-on-secondary: #003824;
+  --color-secondary-container: #00a572;
+  --color-on-secondary-container: #00311f;
+  --color-secondary-fixed: #6ffbbe;
+  --color-secondary-fixed-dim: #4edea3;
+  --color-on-secondary-fixed: #002113;
+  --color-on-secondary-fixed-variant: #005236;
+
+  --color-tertiary: #bec6e0;
+  --color-on-tertiary: #283044;
+  --color-tertiary-container: #939bb3;
+  --color-on-tertiary-container: #2b3347;
+  --color-tertiary-fixed: #dae2fd;
+  --color-tertiary-fixed-dim: #bec6e0;
+  --color-on-tertiary-fixed: #131b2e;
+  --color-on-tertiary-fixed-variant: #3f465c;
+
+  --color-sky-cyan: #0ea5e9;
+  --color-aqi-good: #10b981;
+  --color-aqi-moderate: #f59e0b;
+  --color-aqi-unhealthy-sensitive: #f97316;
+  --color-aqi-unhealthy: #ef4444;
+  --color-aqi-very-unhealthy: #8b5cf6;
+  --color-aqi-hazardous: #7f1d1d;
+
+  --color-surface-glass: rgba(30, 41, 59, 0.65);
+  --color-surface-glass-active: rgba(51, 65, 85, 0.75);
+  --color-border-glass: rgba(255, 255, 255, 0.08);
+
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-telemetry-num: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-label-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+}
+
+@layer base {
+  :root {
+    --theme-bg: #f8fafd;
+    --theme-surface: #ffffff;
+    --theme-surface-high: #f0f4f9;
+    --theme-surface-low: #ffffff;
+    --theme-surface-bright: #e3e3e3;
+    --theme-text-primary: #1f1f1f;
+    --theme-text-secondary: #444746;
+    --theme-text-muted: #747775;
+    --theme-border: #dadce0;
+    --theme-glass: rgba(255, 255, 255, 0.92);
+    --theme-glass-active: rgba(240, 244, 249, 0.98);
+    --google-blue: #0b57d0;
+    --google-blue-hover: #1a73e8;
+    --google-blue-container: #c2e7ff;
+    --google-on-blue-container: #001d35;
+    --google-green: #1e8e3e;
+    --google-yellow: #f9ab00;
+    --google-red: #d93025;
+  }
+
+  html.dark, body.dark {
+    --theme-bg: #0d1322;
+    --theme-surface: #191f2f;
+    --theme-surface-high: #242a3a;
+    --theme-surface-low: #151b2b;
+    --theme-surface-bright: #33394a;
+    --theme-text-primary: #ffffff;
+    --theme-text-secondary: #bec8d2;
+    --theme-text-muted: #88929b;
+    --theme-border: rgba(255, 255, 255, 0.08);
+    --theme-glass: rgba(30, 41, 59, 0.65);
+    --theme-glass-active: rgba(51, 65, 85, 0.8);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--theme-bg);
+    color: var(--theme-text-primary);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area insets */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background with authentic soft warm off-white texture tone -->
+    <radialGradient id="paperBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fdfcf8"/>
+      <stop offset="70%" stop-color="#f7f5ed"/>
+      <stop offset="100%" stop-color="#f2efe5"/>
+    </radialGradient>
+
+    <!-- Upper Wing Left: Sky Blue -->
+    <linearGradient id="upperLeftWing" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#72a8d7"/>
+      <stop offset="45%" stop-color="#69a3cf"/>
+      <stop offset="85%" stop-color="#5fa1a7"/>
+      <stop offset="100%" stop-color="#55998a"/>
+    </linearGradient>
+
+    <!-- Upper Wing Right: Teal Cyan -->
+    <linearGradient id="upperRightWing" x1="100%" y1="20%" x2="0%" y2="80%">
+      <stop offset="0%" stop-color="#5ca6bc"/>
+      <stop offset="45%" stop-color="#569fb2"/>
+      <stop offset="85%" stop-color="#4d9796"/>
+      <stop offset="100%" stop-color="#4a8f7c"/>
+    </linearGradient>
+
+    <!-- Lower Wing Left: Soft Spring Green into Sage -->
+    <linearGradient id="lowerLeftWing" x1="0%" y1="80%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#84bd74"/>
+      <stop offset="45%" stop-color="#78b266"/>
+      <stop offset="85%" stop-color="#6ca65a"/>
+      <stop offset="100%" stop-color="#5b9858"/>
+    </linearGradient>
+
+    <!-- Lower Wing Right: Aqua Marine into Deep Teal -->
+    <linearGradient id="lowerRightWing" x1="100%" y1="80%" x2="0%" y2="20%">
+      <stop offset="0%" stop-color="#59a0b6"/>
+      <stop offset="45%" stop-color="#4f93a4"/>
+      <stop offset="85%" stop-color="#47858c"/>
+      <stop offset="100%" stop-color="#3d7575"/>
+    </linearGradient>
+
+    <!-- Central Top Arch: Sage Olive Apex -->
+    <linearGradient id="topArchGreen" x1="15%" y1="90%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#80b458"/>
+      <stop offset="35%" stop-color="#8dbf60"/>
+      <stop offset="50%" stop-color="#86ba5b"/>
+      <stop offset="65%" stop-color="#73a956"/>
+      <stop offset="100%" stop-color="#5a976c"/>
+    </linearGradient>
+
+    <!-- Central Bottom V: Deep Sea Pine Teal -->
+    <linearGradient id="bottomVTeal" x1="15%" y1="10%" x2="85%" y2="10%">
+      <stop offset="0%" stop-color="#417c80"/>
+      <stop offset="35%" stop-color="#366e6b"/>
+      <stop offset="50%" stop-color="#376f68"/>
+      <stop offset="65%" stop-color="#3f7a6f"/>
+      <stop offset="100%" stop-color="#4f8a70"/>
+    </linearGradient>
+
+    <!-- Center Ring Celestial Blue -->
+    <linearGradient id="centerRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#75a9c3"/>
+      <stop offset="50%" stop-color="#6ba3be"/>
+      <stop offset="100%" stop-color="#5b95b2"/>
+    </linearGradient>
+
+    <!-- Subtle texture filter simulating organic watercolor paper grain -->
+    <filter id="subtleGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.035 0" />
+      <feComposite in2="SourceGraphic" in="glitch" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background with warm eggshell color matching artwork -->
+  <rect width="1000" height="1000" rx="140" fill="url(#paperBg)" />
+
+  <g id="vayux-logo-mark">
+    <!-- 1. Left Upper Wing Horn (curling in from top-left) -->
+    <path
+      d="M 85,340
+         C 84,318 102,302 124,302
+         C 172,302 248,328 326,396
+         C 400,460 448,536 464,574
+         C 454,592 436,605 414,605
+         C 392,605 365,570 312,506
+         C 254,435 190,380 122,366
+         C 98,361 86,354 85,340 Z"
+      fill="url(#upperLeftWing)"
+    />
+
+    <!-- 2. Right Upper Wing Horn (curling in from top-right, perfectly mirrored) -->
+    <path
+      d="M 915,340
+         C 916,318 898,302 876,302
+         C 828,302 752,328 674,396
+         C 600,460 552,536 536,574
+         C 546,592 564,605 586,605
+         C 608,605 635,570 688,506
+         C 746,435 810,380 878,366
+         C 902,361 914,354 915,340 Z"
+      fill="url(#upperRightWing)"
+    />
+
+    <!-- 3. Lower-Left Wing Horn (sweeping upward and in) -->
+    <path
+      d="M 108,660
+         C 107,678 125,694 148,694
+         C 218,694 308,652 384,575
+         C 414,545 440,510 456,480
+         C 446,460 428,446 410,446
+         C 390,446 364,476 316,534
+         C 260,600 184,646 132,648
+         C 116,648 108,652 108,660 Z"
+      fill="url(#lowerLeftWing)"
+    />
+
+    <!-- 4. Lower-Right Wing Horn (sweeping upward and in, mirrored) -->
+    <path
+      d="M 892,660
+         C 893,678 875,694 852,694
+         C 782,694 692,652 616,575
+         C 586,545 560,510 544,480
+         C 554,460 572,446 590,446
+         C 610,446 636,476 684,534
+         C 740,600 816,646 868,648
+         C 884,648 892,652 892,660 Z"
+      fill="url(#lowerRightWing)"
+    />
+
+    <!-- 5. Bottom Inverted V-Shield Loop (Teal Pine) with crisp white separation contour -->
+    <path
+      d="M 378,542
+         C 410,610 456,678 485,713
+         C 493,722 507,722 515,713
+         C 544,678 590,610 622,542
+         C 628,530 622,518 610,522
+         C 582,530 554,570 532,608
+         C 516,634 500,644 500,644
+         C 500,644 484,634 468,608
+         C 446,570 418,530 390,522
+         C 378,518 372,530 378,542 Z"
+      fill="url(#bottomVTeal)"
+      stroke="#f7f5ed"
+      stroke-width="5"
+    />
+
+    <!-- 6. Top Organic Arch (Sage Olive Green Leaf Apex) overlapping with crisp seam -->
+    <path
+      d="M 215,670
+         C 285,616 360,516 420,408
+         C 455,346 482,295 494,293
+         C 498,292 502,292 506,293
+         C 518,295 545,346 580,408
+         C 640,516 715,616 785,670
+         C 798,680 812,672 804,658
+         C 745,548 672,424 615,344
+         C 570,282 535,260 500,260
+         C 465,260 430,282 385,344
+         C 328,424 255,548 196,658
+         C 188,672 202,680 215,670 Z"
+      fill="url(#topArchGreen)"
+      stroke="#f7f5ed"
+      stroke-width="6"
+    />
+
+    <!-- 7. Center Atmospheric Eye/Sensor Ring (Soft Slate Cyan Donut) -->
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M 500,436
+         C 537.5,436 568,466.5 568,504
+         C 568,541.5 537.5,572 500,572
+         C 462.5,572 432,541.5 432,504
+         C 432,466.5 462.5,436 500,436 Z
+         M 500,470
+         C 481.2,470 466,485.2 466,504
+         C 466,522.8 481.2,538 500,538
+         C 518.8,538 534,522.8 534,504
+         C 534,485.2 518.8,470 500,470 Z"
+      fill="url(#centerRing)"
+      opacity="0.94"
+    />
+  </g>
+</svg>
